@@ -1,0 +1,13 @@
+sysbench --num-threads=10 --max-time=3600 --max-requests=999999999 --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --oltp-table-size=10000000 --oltp-tables-count=64 --db-driver=mysql --mysql-table-engine=innodb --mysql-host=10.135.106.16 --mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234 prepare
+
+sysbench --num-threads=50 --max-time=3600 --max-requests=999999999 --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --oltp-table-size=10000000 --oltp-tables-count=64 --db-driver=mysql --mysql-table-engine=innodb --mysql-host=10.135.106.16 --mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234 run >> mysqlbench.log
+
+sysbench --num-threads=10 --max-time=3600 --max-requests=999999999 --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --oltp-table-size=10000000 --oltp-tables-count=64 --db-driver=mysql --mysql-table-engine=innodb --mysql-host=10.135.106.16 --mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234--mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234 cleanup
+
+sysbench --num-threads=50 --max-time=3600 --max-requests=999999999 --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --oltp-table-size=10000000 --oltp-tables-count=64 --db-driver=mysql --mysql-table-engine=innodb --mysql-host=10.135.106.16 --mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234--mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234 cleanup
+
+sysbench --num-threads=100 --max-time=3600 --max-requests=999999999 --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --oltp-table-size=10000000 --oltp-tables-count=64 --db-driver=mysql --mysql-table-engine=innodb --mysql-host=10.135.106.16 --mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234--mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234 cleanup
+
+sysbench --num-threads=150 --max-time=3600 --max-requests=999999999 --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --oltp-table-size=10000000 --oltp-tables-count=64 --db-driver=mysql --mysql-table-engine=innodb --mysql-host=10.135.106.16 --mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234--mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234 cleanup
+
+sysbench --num-threads=200 --max-time=3600 --max-requests=999999999 --test=/usr/share/sysbench/tests/include/oltp_legacy/oltp.lua --oltp-table-size=10000000 --oltp-tables-count=64 --db-driver=mysql --mysql-table-engine=innodb --mysql-host=10.135.106.16 --mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234--mysql-port=4852 --mysql-user=banma_test --mysql-password=Pass1234 cleanup
